@@ -1,0 +1,412 @@
+{
+  "form": {
+    "id": "form",
+    "title": "Form",
+    "description": "A simple, straight up donation form for your organisation.",
+    "url": "/themes/form/",
+    "public": true,
+    "order": 1,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#6495ED",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/form/background.jpg",
+      "fonts": "Montserrat:400,700|Roboto:300,400,500,700,300italic,500italic,700italic",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": false,
+      "home_text": true,
+      "footer_text": true,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  },
+  "summit": {
+    "id": "summit",
+    "title": "Summit",
+    "description": "A fundraising adventure theme where supporters can create a profile page, blog and take donations.",
+    "url": "/themes/summit/",
+    "public": true,
+    "order": 6,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#62c5f0",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/summit/background.jpg",
+      "fonts": "Merriweather:300,300i,700,700i|Roboto+Condensed:700|Roboto:300,300i,400,500,500i,700,700i",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": true,
+      "home_text": true,
+      "footer_text": true,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  },
+  "supporter": {
+    "id": "supporter",
+    "title": "Supporter",
+    "description": "Let your supporters start their own fundraising pages for birthdays, weddings, or anything they choose! ",
+    "url": "/themes/supporter/",
+    "public": true,
+    "order": 5,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#BA3866",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/supporter/background.jpg",
+      "fonts": "Cabin:400,700|Roboto:300,300i,400,500,500i,700,700i",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": true,
+      "home_text": true,
+      "footer_text": true,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  },
+  "velocity": {
+    "id": "velocity",
+    "title": "Velocity",
+    "description": "A fundraising adventure theme where supporters can create a profile page, blog and take donations.",
+    "url": "/themes/velocity/",
+    "public": true,
+    "order": 6,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#BB182B",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/velocity/background.jpg",
+      "fonts": "Montserrat:400,700|Roboto:300,300i,400,500,500i,700,700i",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": true,
+      "home_text": true,
+      "footer_text": true,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  },
+  "challenger": {
+    "id": "challenger",
+    "title": "Challenger",
+    "description": "Start a peer to peer fundraiser. Supporters can create profile pages, create teams, blog and take donations.",
+    "url": "/themes/challenger/",
+    "public": true,
+    "order": 4,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#7DA751",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/challenger/background.jpg",
+      "fonts": "Raleway:400,700|Roboto:300,300i,400,500,500i,700,700i",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": true,
+      "home_text": true,
+      "footer_text": true,
+      "registration_fee": false,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  },
+  "run": {
+    "id": "run",
+    "title": "Run",
+    "description": "Build your fun-run website. Run lets you charge for registrations, and build participant profiles and teams.",
+    "url": "/themes/summit/",
+    "public": true,
+    "order": 5,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#D90F52",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/run/background.jpg",
+      "fonts": "Fjalla+One|Roboto:300,300i,400,500,500i,700,700i",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": true,
+      "home_text": true,
+      "footer_text": true,
+      "registration_fee": true,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  },
+  "appeal": {
+    "id": "appeal",
+    "title": "Appeal",
+    "description": "A single-page campaign with a prominent donation form, ready for one off appeals.",
+    "url": "/themes/appeal/",
+    "public": true,
+    "order": 2,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#f2b361",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/appeal/background.jpg",
+      "fonts": "Playfair+Display|Open+Sans:400,400i,700,700i",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": true,
+      "home_text": true,
+      "footer_text": true,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  },
+  "emergency": {
+    "id": "emergency",
+    "title": "Emergency",
+    "description": "A single-page campaign with a prominent donation form, ready for one off appeals.",
+    "url": "/themes/emergency/",
+    "public": true,
+    "order": 3,
+    "theme": {
+      "custom_style": true,
+      "primary_color": "#e05f22",
+      "body_font": false,
+      "heading_font": false,
+      "background_url": "https://raisely-themes.imgix.net/emergency/background.jpg",
+      "fonts": "Oswald:400,700|Roboto:300,300i,400,500,500i,700,700i",
+      "default_profile_url": true,
+      "logo_url": true,
+      "headline_text": true,
+      "intro_text": true,
+      "home_text": true,
+      "footer_text": true,
+      "donations_text": "A tax receipt will be emailed to you once the donation has processed.",
+      "dashboard_text": "Thanks for signing up, it's time to share your profile and start fundraising!",
+      "css": true
+    },
+    "language": {
+      "individual": true,
+      "individuals": true,
+      "group": true,
+      "groups": true,
+      "campaign": true,
+      "donate": true,
+      "donation": true,
+      "donating": true,
+      "goal": true,
+      "signup": true
+    },
+    "amounts": {
+      "amount": true,
+      "description": false
+    },
+    "social": {
+      "facebook_description": true,
+      "facebook_share_url": true,
+      "facebook_page_url": true,
+      "twitter_tweet": true,
+      "twitter_hashtag": true,
+      "twitter_handle": true
+    },
+    "menu": true,
+    "pages": true
+  }
+}

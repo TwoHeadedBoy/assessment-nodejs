@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        include includes/head.jade
+
+    body
+        include includes/header.jade
+
+        main
+            .container
+                article.col-8.offset-2
+                    .content
+                        h3 Create a new campaign
+                        form(action='/create', method='post' enctype="multipart/form-data")
+                            input.input-full(type='text', placeholder='Campaign Name', name='name')
+                            input.input-full(type='number', placeholder='Fundraising Goal', name='goal')
+                            textarea.input-full(placeholder='Description', name='description')
+                            select(name='theme')
+                                each theme in themes
+                                    option(value='#{theme.id}') #{theme.title}
+
+
+                            input(type='file' name='background_url')
+
+                            hr
+                            input.button.button-primary.button-full.button-large(type='submit', value='Create')

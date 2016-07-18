@@ -1,0 +1,284 @@
+body {
+    background:#333436;
+}
+
+main {
+    /*background:#1F5681;*/
+}
+
+main article {
+    text-align:center;
+    /*margin-top:10em;*/
+}
+
+main article #brand {
+    display:inline-block;
+}
+
+main article #brand img{
+    display:inline-block;
+    max-width:180px;
+    margin:0 auto 20px;
+}
+
+header {
+    height:100px;
+}
+
+.error {
+    color: #ff5943;
+}
+.success {
+     color: #2E9FED;
+ }
+
+
+.fineprint {
+    color:#777;
+    margin:0;
+}
+
+.fineprint a {
+    color:#2E9FED;
+    font-weight:bold;
+}
+
+h1,h2,h3,h4,h5 {
+    color:white;
+}
+
+.content {
+    background:#fafafa;
+    border-radius:3px;
+    padding:20px 20px 20px;
+    margin:20px 0 20px 0;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+    color:#333;
+}
+
+/* Campaign Creation */
+
+.page-start header {
+    width:100%;
+    margin:2em 0;
+    text-align:center;
+    display:block;
+    color:white;
+}
+.page-start header img {
+    max-width:240px;
+    margin:0 auto;
+}
+
+.theme-chooser {
+    text-align:center;
+    color:white;
+}
+
+.themes .theme {
+    color:white;
+    text-align:center;
+    min-height:400px;
+    margin-bottom:2em;
+}
+
+.themes .theme .button {
+    opacity:.9;
+}
+
+.themes .theme .button:hover,
+.themes .theme .button:focus {
+    opacity:1;
+}
+
+.themes .theme img {
+    cursor:pointer;
+}
+
+.themes .theme h3 {
+    margin:0 0 .5em;
+}
+
+.themes .theme p {
+    font-size:.9em;
+    line-height:1.2em;
+}
+
+/* Campaign Preview */
+
+.campaign-preview {
+    color:white;
+}
+
+.campaign-preview img {
+    max-width:200px;
+    height:auto;
+}
+.campaign-preview .url {
+    color:#2E9FED;
+    font-weight:bold;
+    font-style:italic;
+}
+.campaign-preview h1 {
+    margin:-.5em 0 0 0;
+}
+.campaign-preview h4 {
+    margin-top:0;
+}
+
+
+/* Buttons */
+
+[class^="button"].button-primary,
+[class*=" button"].button-primary,
+input[type="submit"].button-primary {
+    background:#2E9FED;
+}
+[class^="button"].button-primary:hover,
+[class*=" button"].button-primary:hover,
+[class^="button"].button-primary:focus,
+[class*=" button"].button-primary:focus,
+input[type="submit"].button-primary:hover,
+input[type="submit"].button-primary:focus {
+    background: #2d87d3;
+}
+input[type="submit"].button-primary.disabled:hover,
+input[type="submit"].button-primary.disabled:focus{
+    background:#aaa;
+    color:white;
+}
+
+/* Auth */
+#loading-progress {
+    color:#aaa;
+}
+
+.spinner {
+    width:80px;
+    height:auto;
+    margin:10px auto;
+}
+
+/* Counter */
+
+.counter,
+.counter article {
+    text-align:left;
+    margin-top:0;
+}
+
+.counter nav .nav-menu {
+    float:left;
+}
+
+.counter .status {
+    color:#8696B4;
+}
+
+.counter .status.live {
+    color:white;
+}
+.counter .status.disconnected {
+    color:#ff5943;
+}
+.counter .status.connecting {
+    color:#8696B4;
+}
+.counter .bullet {
+    font-size: 1.5em;
+    margin-right: 0.2em;
+    line-height: .9em;
+}
+
+.statistic {
+    font-size:2em;
+    padding-bottom:2rem;
+    border-bottom:1px rgba(255,255,255,0.1) solid;
+    margin-bottom:2rem;
+}
+
+.statistic h3 {
+    font-size:1em;
+    margin:0 0 1em 0;
+    color:#51607C;
+}
+.statistic h1 {
+    font-size:4em;
+    font-weight:500;
+    margin:0;
+}
+.statistic h5 {
+    color: #8696B4;
+    margin: .5em 0 0;
+}
+.statistic h5 strong {
+    color:white;
+}
+
+.statistic.statistic-small {
+    font-size:1em;
+}
+
+.moments {
+    margin:0;
+    padding:0;
+}
+
+.moments .moment {
+    list-style:none inside none;
+    margin:0;
+    padding:0;
+    padding-bottom:1rem;
+    border-bottom:1px rgba(255,255,255,0.1) solid;
+    margin-bottom:1rem;
+}
+
+.moments .moment .title {
+    color:#51607C;
+    margin:0;
+    font-size:1.3em;
+}
+
+.moments .moment .meta {
+    color:#51607C;
+    font-size:.9em;
+    margin:0;
+}
+
+
+.campaigns .campaign {
+    text-decoration: none;
+    opacity:.85;
+}
+
+.campaigns .campaign:hover,
+.campaigns .campaign:focus {
+    opacity:1;
+}
+
+.campaigns .campaign h3,
+.campaigns .campaign  h4 {
+    margin:.5em 0;
+}
+
+.campaign-single h1 {
+    margin:0 0 0 0;
+}
+.campaign-single h3 {
+    margin:.5em 0;
+    color:#51607C;
+}
+
+.campaign-single .fineprint {
+    margin:0 0 .5em 0;
+}
+
+@media (max-width:768px) {
+
+}

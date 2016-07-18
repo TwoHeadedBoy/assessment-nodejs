@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        include includes/head.jade
+
+    body
+        include includes/header.jade
+
+        main
+            .container
+                article.col-6
+                    img(src='/public/themes/#{campaign.theme}/preview.01.png' alt='#{campaign.theme}')
+
+                aside.col-6
+                    .content.content-wide.campaign-single
+
+                        img(src='#{campaign.background_url}' alt='')
+
+                        h1 #{campaign.name}
+                        h3 $#{campaign.goal}
+                        p.fineprint #{campaign.createdAt}
+
+                        p.lead #{campaign.description}
+            .container
+                a.button.button-small(href='/') &larr; Back

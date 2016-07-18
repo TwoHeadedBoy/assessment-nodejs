@@ -1,0 +1,388 @@
+.section-primary,
+section.section-alt,
+.dashboard-profile.dashboard-profile-highlight {
+  background: '@primaryColor';
+  color: white;
+}
+.section-home,
+.section-title,
+.section-secondary {
+  background: '@secondaryColor';
+  color: white;
+}
+.section-home .overlay,
+.section-title .overlay,
+.section-secondary .overlay {
+  background: '@secondaryColor';
+  opacity: 0.4;
+}
+[class^="button"],
+[class*=" button"],
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[class^='donate-navigation-'] {
+  background: #9d9fa2;
+  color: white;
+}
+[class^="button"]:hover,
+[class*=" button"]:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+[class^='donate-navigation-']:hover,
+[class^="button"]:focus,
+[class*=" button"]:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+[class^='donate-navigation-']:focus {
+  background: #838589;
+}
+[class^="button"]:active,
+[class*=" button"]:active,
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+[class^='donate-navigation-']:active,
+[class^="button"].active,
+[class*=" button"].active,
+button.active,
+input[type="button"].active,
+input[type="submit"].active,
+input[type="reset"].active,
+[class^='donate-navigation-'].active {
+  background: #76787c;
+}
+[class^="button"].disabled,
+[class*=" button"].disabled,
+button.disabled,
+input[type="button"].disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+[class^='donate-navigation-'].disabled {
+  background: #b7b8bb;
+  color: #838589;
+}
+[class^="button"].primary,
+[class*=" button"].primary,
+button.primary,
+input[type="button"].primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+[class^='donate-navigation-'].primary,
+[class^="button"].button-primary,
+[class*=" button"].button-primary,
+button.button-primary,
+input[type="button"].button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+[class^='donate-navigation-'].button-primary {
+  background: '@primaryColor';
+  color: white;
+}
+[class^="button"].primary:hover,
+[class*=" button"].primary:hover,
+button.primary:hover,
+input[type="button"].primary:hover,
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+[class^='donate-navigation-'].primary:hover,
+[class^="button"].button-primary:hover,
+[class*=" button"].button-primary:hover,
+button.button-primary:hover,
+input[type="button"].button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+[class^='donate-navigation-'].button-primary:hover,
+[class^="button"].primary:focus,
+[class*=" button"].primary:focus,
+button.primary:focus,
+input[type="button"].primary:focus,
+input[type="submit"].primary:focus,
+input[type="reset"].primary:focus,
+[class^='donate-navigation-'].primary:focus,
+[class^="button"].button-primary:focus,
+[class*=" button"].button-primary:focus,
+button.button-primary:focus,
+input[type="button"].button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+[class^='donate-navigation-'].button-primary:focus {
+  background: '@primaryColor,-8';
+}
+[class^="button"].primary:active,
+[class*=" button"].primary:active,
+button.primary:active,
+input[type="button"].primary:active,
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+[class^='donate-navigation-'].primary:active,
+[class^="button"].button-primary:active,
+[class*=" button"].button-primary:active,
+button.button-primary:active,
+input[type="button"].button-primary:active,
+input[type="submit"].button-primary:active,
+input[type="reset"].button-primary:active,
+[class^='donate-navigation-'].button-primary:active,
+[class^="button"].primary.active,
+[class*=" button"].primary.active,
+button.primary.active,
+input[type="button"].primary.active,
+input[type="submit"].primary.active,
+input[type="reset"].primary.active,
+[class^='donate-navigation-'].primary.active,
+[class^="button"].button-primary.active,
+[class*=" button"].button-primary.active,
+button.button-primary.active,
+input[type="button"].button-primary.active,
+input[type="submit"].button-primary.active,
+input[type="reset"].button-primary.active,
+[class^='donate-navigation-'].button-primary.active {
+  background: '@primaryColor,-13';
+  color: white;
+}
+[class^="button"].primary.disabled,
+[class*=" button"].primary.disabled,
+button.primary.disabled,
+input[type="button"].primary.disabled,
+input[type="submit"].primary.disabled,
+input[type="reset"].primary.disabled,
+[class^='donate-navigation-'].primary.disabled,
+[class^="button"].button-primary.disabled,
+[class*=" button"].button-primary.disabled,
+button.button-primary.disabled,
+input[type="button"].button-primary.disabled,
+input[type="submit"].button-primary.disabled,
+input[type="reset"].button-primary.disabled,
+[class^='donate-navigation-'].button-primary.disabled {
+  background: #e1e6e7;
+  color: #6a6c6f;
+  cursor: default;
+}
+[class^="button"].button-input,
+[class*=" button"].button-input,
+button.button-input,
+input[type="button"].button-input,
+input[type="submit"].button-input,
+input[type="reset"].button-input,
+[class^='donate-navigation-'].button-input {
+  background: #eceff0;
+  color: '@textColor,40';
+}
+[class^="button"].button-input:hover,
+[class*=" button"].button-input:hover,
+button.button-input:hover,
+input[type="button"].button-input:hover,
+input[type="submit"].button-input:hover,
+input[type="reset"].button-input:hover,
+[class^='donate-navigation-'].button-input:hover,
+[class^="button"].button-input:focus,
+[class*=" button"].button-input:focus,
+button.button-input:focus,
+input[type="button"].button-input:focus,
+input[type="submit"].button-input:focus,
+input[type="reset"].button-input:focus,
+[class^='donate-navigation-'].button-input:focus {
+  background: #e7ebec;
+}
+[class^="button"].button-email,
+[class*=" button"].button-email,
+button.button-email,
+input[type="button"].button-email,
+input[type="submit"].button-email,
+input[type="reset"].button-email,
+[class^='donate-navigation-'].button-email {
+  background: '@secondaryColor';
+  color: white;
+}
+[class^="button"].button-email:hover,
+[class*=" button"].button-email:hover,
+button.button-email:hover,
+input[type="button"].button-email:hover,
+input[type="submit"].button-email:hover,
+input[type="reset"].button-email:hover,
+[class^='donate-navigation-'].button-email:hover,
+[class^="button"].button-email:focus,
+[class*=" button"].button-email:focus,
+button.button-email:focus,
+input[type="button"].button-email:focus,
+input[type="submit"].button-email:focus,
+input[type="reset"].button-email:focus,
+[class^='donate-navigation-'].button-email:focus {
+  background: '@secondaryColor,-5';
+}
+[class^="button"].button-email:active,
+[class*=" button"].button-email:active,
+button.button-email:active,
+input[type="button"].button-email:active,
+input[type="submit"].button-email:active,
+input[type="reset"].button-email:active,
+[class^='donate-navigation-'].button-email:active {
+  background: '@secondaryColor,-10';
+}
+.option-outline [class^="button"].primary,
+.option-outline [class*=" button"].primary,
+.option-outline button.primary,
+.option-outline input[type="button"].primary,
+.option-outline input[type="submit"].primary,
+.option-outline input[type="reset"].primary,
+.option-outline [class^='donate-navigation-'].primary,
+.option-outline [class^="button"].button-primary,
+.option-outline [class*=" button"].button-primary,
+.option-outline button.button-primary,
+.option-outline input[type="button"].button-primary,
+.option-outline input[type="submit"].button-primary,
+.option-outline input[type="reset"].button-primary,
+.option-outline [class^='donate-navigation-'].button-primary {
+  border-color: '@primaryColor';
+  color: '@primaryColor';
+}
+.option-outline [class^="button"].primary:hover,
+.option-outline [class*=" button"].primary:hover,
+.option-outline button.primary:hover,
+.option-outline input[type="button"].primary:hover,
+.option-outline input[type="submit"].primary:hover,
+.option-outline input[type="reset"].primary:hover,
+.option-outline [class^='donate-navigation-'].primary:hover,
+.option-outline [class^="button"].button-primary:hover,
+.option-outline [class*=" button"].button-primary:hover,
+.option-outline button.button-primary:hover,
+.option-outline input[type="button"].button-primary:hover,
+.option-outline input[type="submit"].button-primary:hover,
+.option-outline input[type="reset"].button-primary:hover,
+.option-outline [class^='donate-navigation-'].button-primary:hover,
+.option-outline [class^="button"].primary:focus,
+.option-outline [class*=" button"].primary:focus,
+.option-outline button.primary:focus,
+.option-outline input[type="button"].primary:focus,
+.option-outline input[type="submit"].primary:focus,
+.option-outline input[type="reset"].primary:focus,
+.option-outline [class^='donate-navigation-'].primary:focus,
+.option-outline [class^="button"].button-primary:focus,
+.option-outline [class*=" button"].button-primary:focus,
+.option-outline button.button-primary:focus,
+.option-outline input[type="button"].button-primary:focus,
+.option-outline input[type="submit"].button-primary:focus,
+.option-outline input[type="reset"].button-primary:focus,
+.option-outline [class^='donate-navigation-'].button-primary:focus {
+  border-color: '@primaryColor,-8';
+  color: '@primaryColor,-8';
+}
+.option-outline [class^="button"].primary:active,
+.option-outline [class*=" button"].primary:active,
+.option-outline button.primary:active,
+.option-outline input[type="button"].primary:active,
+.option-outline input[type="submit"].primary:active,
+.option-outline input[type="reset"].primary:active,
+.option-outline [class^='donate-navigation-'].primary:active,
+.option-outline [class^="button"].button-primary:active,
+.option-outline [class*=" button"].button-primary:active,
+.option-outline button.button-primary:active,
+.option-outline input[type="button"].button-primary:active,
+.option-outline input[type="submit"].button-primary:active,
+.option-outline input[type="reset"].button-primary:active,
+.option-outline [class^='donate-navigation-'].button-primary:active,
+.option-outline [class^="button"].primary.active,
+.option-outline [class*=" button"].primary.active,
+.option-outline button.primary.active,
+.option-outline input[type="button"].primary.active,
+.option-outline input[type="submit"].primary.active,
+.option-outline input[type="reset"].primary.active,
+.option-outline [class^='donate-navigation-'].primary.active,
+.option-outline [class^="button"].button-primary.active,
+.option-outline [class*=" button"].button-primary.active,
+.option-outline button.button-primary.active,
+.option-outline input[type="button"].button-primary.active,
+.option-outline input[type="submit"].button-primary.active,
+.option-outline input[type="reset"].button-primary.active,
+.option-outline [class^='donate-navigation-'].button-primary.active {
+  color: '@primaryColor';
+  border-color: '@primaryColor,-13';
+}
+.option-outline [class^="button"].primary:active.disabled,
+.option-outline [class*=" button"].primary:active.disabled,
+.option-outline button.primary:active.disabled,
+.option-outline input[type="button"].primary:active.disabled,
+.option-outline input[type="submit"].primary:active.disabled,
+.option-outline input[type="reset"].primary:active.disabled,
+.option-outline [class^='donate-navigation-'].primary:active.disabled,
+.option-outline [class^="button"].button-primary:active.disabled,
+.option-outline [class*=" button"].button-primary:active.disabled,
+.option-outline button.button-primary:active.disabled,
+.option-outline input[type="button"].button-primary:active.disabled,
+.option-outline input[type="submit"].button-primary:active.disabled,
+.option-outline input[type="reset"].button-primary:active.disabled,
+.option-outline [class^='donate-navigation-'].button-primary:active.disabled,
+.option-outline [class^="button"].primary.active.disabled,
+.option-outline [class*=" button"].primary.active.disabled,
+.option-outline button.primary.active.disabled,
+.option-outline input[type="button"].primary.active.disabled,
+.option-outline input[type="submit"].primary.active.disabled,
+.option-outline input[type="reset"].primary.active.disabled,
+.option-outline [class^='donate-navigation-'].primary.active.disabled,
+.option-outline [class^="button"].button-primary.active.disabled,
+.option-outline [class*=" button"].button-primary.active.disabled,
+.option-outline button.button-primary.active.disabled,
+.option-outline input[type="button"].button-primary.active.disabled,
+.option-outline input[type="submit"].button-primary.active.disabled,
+.option-outline input[type="reset"].button-primary.active.disabled,
+.option-outline [class^='donate-navigation-'].button-primary.active.disabled {
+  background: #e1e6e7;
+  color: #6a6c6f;
+  cursor: default;
+}
+.content-holder.content-holder-primary {
+  background: '@primaryColor,-10';
+  color: white;
+}
+.content-holder.content-holder-primary h1,
+.content-holder.content-holder-primary h2,
+.content-holder.content-holder-primary h3 {
+  color: white;
+}
+.content-holder.content-holder-secondary {
+  background: '@secondaryColor,10';
+  color: white;
+}
+.content-holder.content-holder-secondary h1,
+.content-holder.content-holder-secondary h2,
+.content-holder.content-holder-secondary h3 {
+  color: white;
+}
+.progress {
+  background: #ffffff;
+}
+.progress .progress-bar {
+  background: '@primaryColor,40';
+}
+.section-title {
+  background: '@secondaryColor' no-repeat center center;
+  background-image: url("'@backgroundUrl'");
+  background-size: cover;
+}
+.section-home {
+  background: '@secondaryColor' no-repeat center center;
+  background-image: url("'@backgroundUrl'");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.donate-stages .donate-stages,
+fieldset.donate-stages {
+  border-color: transparent;
+  background-color: '@primaryColor';
+}
+.donate-stages .donate-stage.active,
+fieldset.donate-stages .donate-stage.active {
+  color: '@primaryColor';
+}
+.donate-stages .donate-stage.complete,
+fieldset.donate-stages .donate-stage.complete {
+  color: '@primaryColor';
+}

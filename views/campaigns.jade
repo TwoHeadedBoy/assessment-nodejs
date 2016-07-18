@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        include includes/head.jade
+
+    body
+        include includes/header.jade
+
+        main
+            .container
+                .col-12
+                    h2 My Campaigns
+            div.campaigns.themes
+                each campaign in campaigns
+                    a.campaign.theme.col-6(href='/campaign/#{campaign.id}')
+                        img(src='/public/themes/#{campaign.theme}/preview.01.png' alt='#{campaign.theme}')
+                        h3 #{campaign.name}
+                        h4 $#{campaign.goal}
+                        p #{campaign.description}
+                        p
+                            span.button.button-primary View Campaign
