@@ -54,10 +54,13 @@ function getThemes(callback) {
 
 function *campaigns() {
     try {
+        var page = 'Hello world';
         getThemes(function (error, themes) {
             if (error) throw error;
-            render('campaigns.jade', themes, true);
+            page = render('campaigns', themes);
+            this.body = page;
         });
+        this.body = page;
     } catch (error) {
         throw error
     }
