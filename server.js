@@ -58,7 +58,6 @@ function *campaigns() {
         getThemes(function (error, themes) {
             if (error) throw error;
             page = render('campaigns', themes);
-            this.body = page;
         });
         this.body = page;
     } catch (error) {
