@@ -48,21 +48,29 @@ function getThemes(callback) {
         callback(null, themes);
     });
 }
+
+function *renderPageWithArgs(page, args) {
+    try {
+        var html = yield [render(page, params)];
+        html = html.join('');
+        this.body = html;
+    } catch (error) {
+        render404.call(this, error);
+    }
+}
+
+function *render404(error) {
+    html = yield [render('404.jade')];
+    html = html.join('');
+    this.body = html;
+    throw error;
+}
 /**
  * Post listing.
  */
 
 function *campaigns() {
-    try {
-        var page = 'Hello world';
-        getThemes(function (error, themes) {
-            if (error) throw error;
-            page = render('campaigns', themes);
-        });
-        this.body = page;
-    } catch (error) {
-        throw error
-    }
+    renderPageWithArgs.call(this, 'campaigns.jade', null);
 }
 
 /**
@@ -70,7 +78,9 @@ function *campaigns() {
  */
 
 function *newCampaign() {
-
+    getThemes(function *(error, themes) {
+        renderPageWithArgs.call(this, 'new.jade', themes);
+    });
 }
 
 /**
