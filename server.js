@@ -70,7 +70,11 @@ function *render404(error) {
  */
 
 function *campaigns() {
-    renderPageWithArgs.call(this, 'campaigns.jade', null);
+    // renderPageWithArgs.call(this, 'campaigns.jade', null);
+    // renderPageWithArgs.call(this, '404.jade', null);
+    html = yield [render('404.jade')];
+    html = html.join('');
+    this.body = html;
 }
 
 /**
