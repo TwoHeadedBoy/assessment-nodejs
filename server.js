@@ -78,9 +78,7 @@ function *campaigns() {
  */
 
 function *newCampaign() {
-    getThemes(function *(error, themes) {
-        renderPageWithArgs.call(this, 'new.jade', themes);
-    });
+    renderPageWithArgs.call(this, 'new.jade', null);
 }
 
 /**
@@ -96,7 +94,9 @@ function *campaign(id) {
  */
 
 function *create() {
-
+    getThemes(function *(error, themes) {
+        renderPageWithArgs.call(this, 'new.jade', themes);
+    });
 }
 
 
