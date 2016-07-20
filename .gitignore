@@ -1,5 +1,6 @@
+node_modules/
 .idea/
 .idea/*
 *.log
 *.DS_Store
-Iconnode_modules/
+Icon
