@@ -44,11 +44,15 @@ function getThemes(callback) {
     var themes = null;
     var fs = require('fs');
 
-    fs.readFile(JsonPath, 'utf8', function (error, fileBuffer) {
-        if (error) return callback(error);
-        themes = JSON.parse(fileBuffer);
-        callback(null, themes);
-    });
+    return new Promise((resolve, reject) => {
+
+        fs.readFile(JsonPath, 'utf8', function (error, fileBuffer) {
+            if (error) return callback(error);
+            themes = JSON.parse(fileBuffer);
+            resolve(themes);
+        });
+
+    })
 }
 function *themes(callback) {
     getThemes(callback);
@@ -88,15 +92,16 @@ function getRandomTheme(listOfThemes) {
     return result;
 }
 function fillCampaign() {
-    getThemes(function (error, listOfThemes) {
-        if (error) return error;
+    return getThemes().then(listOfThemes => {
+         // if (error) return error;
         var id = uuid.v4();
         var theme = getRandomTheme(listOfThemes);
         var name = 'Name ' + randomString.generate(10);
         var goal = 'Goal ' + randomString.generate(25);
         var description = 'Description ' + randomString.generate(100);
-        return new Campaign(id, theme, name, goal, description);
-    });
+        var campaign = new Campaign(id, theme, name, goal, description);
+        return Promise.resolve(campaign);
+    })
 }
 
 /**
@@ -105,9 +110,10 @@ function fillCampaign() {
 
 function *campaigns() {
     var campaigns = [fillCampaign(), fillCampaign(), fillCampaign()];
-    var html = yield [render('campaigns.jade')];
-    html = html.join('');
-    this.body = html;
+    
+    var campaigns =  yield Promise.all(campaigns);
+    console.log(campaigns);
+    this.body = yield render('campaigns.jade',{campaigns: campaigns});
 }
 
 /**
