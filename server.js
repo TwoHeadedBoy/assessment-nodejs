@@ -2,7 +2,9 @@
  * Dependencies.
  */
 
-var path = require('path'),
+var randomString = require('randomstring'),
+    uuid = require('node-uuid'),
+    path = require('path'),
     render = require('./lib/render'),
     logger = require('koa-logger'),
     route = require('koa-route'),
@@ -48,31 +50,52 @@ function getThemes(callback) {
         callback(null, themes);
     });
 }
-
-function *renderPageWithArgs(page, args) {
-    try {
-        var html = yield [render(page, params)];
-        html = html.join('');
-        this.body = html;
-    } catch (error) {
-        render404.call(this, error);
-    }
+function *themes(callback) {
+    getThemes(callback);
 }
 
-function *render404(error) {
-    html = yield [render('404.jade')];
-    html = html.join('');
-    this.body = html;
-    throw error;
+// function *renderPage(page) {
+//     try {
+//         var html = yield [render(page)];
+//         html = html.join('');
+//         return html;
+//     } catch (error) {
+//         render404.call(this, error);
+//     }
+// }
+
+// function *render404(error) {
+//     html = yield [render('404.jade')];
+//     html = html.join('');
+//     this.body = html;
+//     throw error;
+// }
+
+function Campaign(id, theme, name, goal, description) {
+    this.id = id;
+    this.theme = theme;
+    this.name = name;
+    this.goal = goal;
+    this.description = description;
 }
+
+function fillCampaign(error, listOfThemes) {
+    if (error) return error;
+    var id = uuid.v4();
+    var theme = listOfThemes[Math.floor(Math.random()*listOfThemes.length)];
+    var name = 'Name ' + randomString.generate(10);
+    var goal = 'Goal ' + randomString.generate(25);
+    var description = 'Description ' + randomString.generate(100);
+    return new Campaign(id, theme, name, goal, description);
+}
+
 /**
  * Post listing.
  */
 
 function *campaigns() {
-    // renderPageWithArgs.call(this, 'campaigns.jade', null);
-    // renderPageWithArgs.call(this, '404.jade', null);
-    html = yield [render('404.jade')];
+    var campaigns = [getThemes(fillCampaign(error, listOfThemes)), getThemes(fillCampaign(error, listOfThemes))];
+    var html = yield [render('campaigns.jade')];
     html = html.join('');
     this.body = html;
 }
@@ -82,7 +105,7 @@ function *campaigns() {
  */
 
 function *newCampaign() {
-    renderPageWithArgs.call(this, 'new.jade', null);
+    renderPage.call(this, 'new.jade');
 }
 
 /**
@@ -98,8 +121,8 @@ function *campaign(id) {
  */
 
 function *create() {
-    getThemes(function *(error, themes) {
-        renderPageWithArgs.call(this, 'new.jade', themes);
+    themes(function *(error, themes) {
+        renderPage.call(this, 'new.jade', themes);
     });
 }
 
