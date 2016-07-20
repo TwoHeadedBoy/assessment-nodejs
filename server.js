@@ -79,14 +79,24 @@ function Campaign(id, theme, name, goal, description) {
     this.description = description;
 }
 
-function fillCampaign(error, listOfThemes) {
-    if (error) return error;
-    var id = uuid.v4();
-    var theme = listOfThemes[Math.floor(Math.random()*listOfThemes.length)];
-    var name = 'Name ' + randomString.generate(10);
-    var goal = 'Goal ' + randomString.generate(25);
-    var description = 'Description ' + randomString.generate(100);
-    return new Campaign(id, theme, name, goal, description);
+function getRandomTheme(listOfThemes) {
+    var result;
+    var count = 0;
+    for (var theme in listOfThemes)
+        if (Math.random() < 1 / ++count)
+            result = theme;
+    return result;
+}
+function fillCampaign() {
+    getThemes(function (error, listOfThemes) {
+        if (error) return error;
+        var id = uuid.v4();
+        var theme = getRandomTheme(listOfThemes);
+        var name = 'Name ' + randomString.generate(10);
+        var goal = 'Goal ' + randomString.generate(25);
+        var description = 'Description ' + randomString.generate(100);
+        return new Campaign(id, theme, name, goal, description);
+    });
 }
 
 /**
@@ -94,7 +104,7 @@ function fillCampaign(error, listOfThemes) {
  */
 
 function *campaigns() {
-    var campaigns = [getThemes(fillCampaign(error, listOfThemes)), getThemes(fillCampaign(error, listOfThemes))];
+    var campaigns = [fillCampaign(), fillCampaign(), fillCampaign()];
     var html = yield [render('campaigns.jade')];
     html = html.join('');
     this.body = html;
