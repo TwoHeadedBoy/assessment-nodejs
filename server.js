@@ -39,19 +39,22 @@ app.use(serve('./public'));
 
 // Route Definitions
 
-function getThemes(callback) {
-    var JsonPath = path.join(__dirname, '/public/themes/themes.json');
-    var themes = null;
-    var fs = require('fs');
+function getThemes() {
+    return new Promise(function (resolve, reject) {
+        var JsonPath = path.join(__dirname, '/public/themes/themes.json');
+        var themes = null;
+        var fs = require('fs');
 
-    fs.readFile(JsonPath, 'utf8', function (error, fileBuffer) {
-        if (error) return callback(error);
-        themes = JSON.parse(fileBuffer);
-        callback(null, themes);
+        fs.readFile(JsonPath, 'utf8', function (error, fileBuffer) {
+            if (error)
+                reject(Error(error));
+            themes = JSON.parse(fileBuffer);
+            resolve(themes);
+        });
     });
 }
-function *themes(callback) {
-    getThemes(callback);
+function *themes() {
+    getThemes();
 }
 
 // function *renderPage(page) {
@@ -82,20 +85,25 @@ function Campaign(id, theme, name, goal, description) {
 function getRandomTheme(listOfThemes) {
     var result;
     var count = 0;
-    for (var theme in listOfThemes)
+    for (var theme in listOfThemes) {
         if (Math.random() < 1 / ++count)
             result = theme;
+    }
     return result;
 }
 function fillCampaign() {
-    getThemes(function (error, listOfThemes) {
-        if (error) return error;
-        var id = uuid.v4();
-        var theme = getRandomTheme(listOfThemes);
-        var name = 'Name ' + randomString.generate(10);
-        var goal = 'Goal ' + randomString.generate(25);
-        var description = 'Description ' + randomString.generate(100);
-        return new Campaign(id, theme, name, goal, description);
+    return new Promise(function (resolve, reject) {
+        getThemes().then(function (listOfThemes) {
+            if (error)
+                reject(Error(error));
+            var id = uuid.v4();
+            var theme = getRandomTheme(listOfThemes);
+            var name = 'Name ' + randomString.generate(10);
+            var goal = 'Goal ' + randomString.generate(25);
+            var description = 'Description ' + randomString.generate(100);
+            var campaign = new Campaign(id, theme, name, goal, description);
+            resolve(campaign);
+        });
     });
 }
 
@@ -104,10 +112,8 @@ function fillCampaign() {
  */
 
 function *campaigns() {
-    var campaigns = [fillCampaign(), fillCampaign(), fillCampaign()];
-    var html = yield [render('campaigns.jade')];
-    html = html.join('');
-    this.body = html;
+    var campaigns = [Promise.resolve(fillCampaign()), Promise.resolve(fillCampaign())];
+    this.body = yield render('campaigns.jade', {campaigns: campaigns});
 }
 
 /**
@@ -115,7 +121,13 @@ function *campaigns() {
  */
 
 function *newCampaign() {
-    renderPage.call(this, 'new.jade');
+    // var themeList = getThemes().then(function(themes) {
+    //     return resolve(themes);
+    // });
+    this.body = getThemes().then((themes) => {
+        return render('new.jade', {themes: themes});
+    });
+
 }
 
 /**
